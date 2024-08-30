@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'sriracha';
+    src: url('../fontes/sriracha.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'artega';
+    src: url('../fontes/artega.otf') format('opentype');
+    font-weight: 900;
+}
+
+:root {
+    --fonte-poema: 'sriracha', 'cursive;'
+}
+
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+header > h1 {
+    font-size: 9vw;
+    padding-top: 50px;
+    font-family: 'artega', 'cursive';
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+header > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 3em;
+}
+
+#criador {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#criador:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.sem-foto {
+    background-color: white;
+    font-size: 3.5vw;
+    padding: 30px;
+    font-family: var(--fonte-poema);
+}
+
+
+#img01 {
+    background-image: url('../imagens/joaninha.jpg');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img02 {
+    background-image: url('../imagens/livro.jpg');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.com-foto > article > p {
+    color: white;
+    margin: 0px 0px 0px 100px;
+    display: inline-block;
+    text-shadow: 2px 2px 0px black;
+    font-size: 3.5vw;
+    padding: 30px;
+    font-family: var(--fonte-poema);
+    background: rgba(0, 0, 0, 0.486);
+}
+
+.com-foto {
+    box-shadow: inset 6px 6px 20px 0px black;
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+}
+
+footer > p {
+    margin: 0px 0px 0px 0px;
+    color: white;
+    text-align: center;
+    font-size: 2vh;
+}
+
+footer > p > a {
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
